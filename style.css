@@ -105,7 +105,7 @@ margin-bottom: 1.6rem;
     
     
     
-    color: #5a26c0;   
+    color: #ffffff;   
 }
 
     
@@ -118,6 +118,7 @@ height: 5.6rem;
 width: 100%;
 padding: 1rem;
 font-family: 'Poppins';
+color: #5a26c0;   
 
 }
 .input-wrapper p{
