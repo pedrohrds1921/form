@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;padding: 0;
+    list-style: none;text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-color: #EFEFEF;;
+
+}
+body::before{
+    content: '';
+    width: 100%;height: 43.6rem;
+    background-color:#535971;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left:0;
+}
+.page{
+    width: 75rem;
+    margin: 0 auto 36rem;
+}
+header{
+    width: 31.7rem;
+    color:  #EFEFEF;
+    padding-top: 14rem;   
+}
+header h1{
+font-family: 'Staatliches';
+font-style: normal;
+font-weight: 400;
+font-size: 4.8rem;
+line-height: 6.0rem;
+padding-bottom: 1.8rem;
+}
+header p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 2.0rem;
+line-height: 3rem;
+
+padding-bottom: 5.8rem;
+}
+form{
+    width: 75rem;
+    min-height: 50rem;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 6.4rem;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.info-p{
+    border: none;
+    
+    
+    display: grid;
+    grid-template-columns:(auto-fill, minmax(1rem ,1fr));
+
+   
+    column-gap: 2.2rem;
+
+
+    
+}
+fieldset  legend{
+border: none;
+font-family: 'Staatliches';
+font-style: normal;
+font-weight: 400;
+font-size: 2.4rem;
+line-height: 3.4rem;
+color: #535971;
+padding-bottom: 1.6rem;
+border-bottom:  1px solid #E6E6F0;
+margin-bottom: 3.6rem;
+width: 100%;
+
+}
+
+.input-wrapper{
+
+display: flex;
+flex-direction: column;
+gap: 0.8rem;
+margin-bottom: 1.6rem;
+}
+.input-wrapper label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    
+    
+    
+    color: #4E4958;   
+}
+
+    
+.input-wrapper input{
+background: #FAFAFC;
+border: 1px solid #E6E6F0;
+box-sizing: border-box;
+border-radius: 0.8rem;
+height: 5.6rem;
+width: 100%;
+padding: 1rem;
+font-family: 'Poppins';
+
+}
+.input-wrapper p{
+font-family: 'Staatliches';
+font-style: normal;
+font-weight: 400;
+font-size: 2rem;
+line-height: 3.4rem;
+/* identical to box height, or 170% */
+
+
+color: #535971;
+}
+.input-wrapper label span{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+
+color: #C1BCCC;
+
+}
+.input-wrapper label span:hover{
+    color: #797483;
+}
+
+.info-p div:nth-of-type(n+3):nth-of-type(-n+4){
+   grid-column:span 2;
+   
+}
+
+
+.times{
+  display:grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 2.2rem;}
+
+.times div:nth-of-type(n+2){
+   align-self: END;
+}
+
+
+
+
+
+footer{
+    background: #535971;
+    height: 16rem;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5.1rem 7.1rem;
+
+}
+.button{
+    height: 5.5rem;
+    background: #FF5374;
+    border-radius: 2.0rem;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+
+color: #FFFFFF;
+
+}
+
+.button:hover{
+    background: #e04866;
+}
+
+input:invalid:focus{
+    outline:2px solid #ff0033;
+}
+
+
+
+ @media  (max-width: 767px){
+    .page{
+        padding: 2.5rem;
+        width: 100%;
+    }
+    form{
+    padding: 4.4rem;
+    width:100%;
+    min-height: 50rem;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+        }
+  
+  .info-p div{
+   grid-column:span 2;
+            
+ }
+  
+   .times{
+     display:grid;
+     grid-template-columns:1fr 1fr;
+   }
+   
+   .times div:nth-of-type(3n-2){
+     grid-column: span 2;
+   }
+
+
+
+}
+
+  
+
+
+
+
+ 
